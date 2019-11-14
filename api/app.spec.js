@@ -7,6 +7,7 @@ describe('server', () => {
       const response = await request(app).get('/');
       expect(response.status).toBe(200);
     });
+
     it('should return correct response body', async () => {
       const response = await request(app).get('/');
       expect(response.body).toEqual({ api: 'up' });
