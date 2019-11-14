@@ -7,7 +7,7 @@ app.use(helmet());
 app.use(express.json());
 
 app.get('/', (req, res) => {
-  res.send({ message: 'its alive... its alliiivvveeee!!' });
+  res.status(200).json({ api: 'up' });
 });
 
 module.exports = app;
